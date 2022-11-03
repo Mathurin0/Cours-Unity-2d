@@ -361,3 +361,18 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Assets/Animations/FadeSystem
+/ProjectSettings
+/Temp
+/UserSettings
+/Library/StateCache
+/Library/ShaderCache
+/Library/PlayerDataCache/Win64/Data/Resources
+/Library/PlayerDataCache/Win64
+/Library/PackageCache/com.unity.ugui@1.0.0/Tests
+/Library/PackageCache/com.unity.ugui@1.0.0
+/Library/PackageCache/com.unity.services.core@1.0.1
+/Library/PackageCache/com.unity.collab-proxy@1.15.12
+/Library/PackageCache
+/Library/BuildPlayerData
+/Builds/My project_Data
