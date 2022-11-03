@@ -4,9 +4,9 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
 	public int coinsCount;
+	public Text CoinsCountText;
 
 	public static Inventory instance;
-	public Text CoinsCountText;
 
 	private void Awake()
 	{

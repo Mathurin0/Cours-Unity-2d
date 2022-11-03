@@ -133,3 +133,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HeartBroke: {fileID: 9175086532368225544}
+  pickupSound: {fileID: 8300000, guid: b078352cd94022248bcfaf6fe1d1ca24, type: 3}

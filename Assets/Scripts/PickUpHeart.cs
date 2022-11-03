@@ -5,6 +5,7 @@ public class PickUpHeart : MonoBehaviour
 {
 	public Animator HeartBroke;
 	private int healthAmount = 20;
+	public AudioClip pickupSound;
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -18,6 +19,7 @@ public class PickUpHeart : MonoBehaviour
 	{
 		if(PlayerHealth.instance.currentHealth != PlayerHealth.instance.maxHealth)
 		{
+			AudioManager.instance.PlayClipAt(pickupSound, transform.position);
 			HeartBroke.SetTrigger("pickedUp");
 			yield return new WaitForSeconds(.2f);
 			PlayerHealth.instance.HealPlayer(healthAmount);

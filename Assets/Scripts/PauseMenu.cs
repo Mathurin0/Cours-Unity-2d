@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
 	public static bool gameIsPaused = false;
+	public static bool isSettingsWindowOpen = false;
 
 	public GameObject pauseMenuUI;
 	public GameObject settingsWindow;
@@ -24,7 +25,7 @@ public class PauseMenu : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetKeyDown(KeyCode.Escape) && !isSettingsWindowOpen)
 		{
 			if (gameIsPaused == true)
 			{
@@ -61,11 +62,13 @@ public class PauseMenu : MonoBehaviour
 	public void SettingsButton()
 	{
 		settingsWindow.SetActive(true);
+		isSettingsWindowOpen = true;
 	}
 
 	public void CloseSettingsWindow()
 	{
 		settingsWindow.SetActive(false);
+		isSettingsWindowOpen = false;
 	}
 
 	public void LoadMainMenu()

@@ -13,6 +13,8 @@ public class PlayerHealth : MonoBehaviour
 	public SpriteRenderer graphics;
 	public bool isInvicible = false;
 
+	public AudioClip hitSound;
+
 	public static PlayerHealth instance;
 
 	private void Awake()
@@ -34,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.H))
+		if (Input.GetKeyDown(KeyCode.H))  // TODO : enlever la possibilité d'enlever de la vie avec la touche "H"
 		{
 			TakeDamage(50);
 		}
@@ -44,6 +46,7 @@ public class PlayerHealth : MonoBehaviour
 	{
 		if (isInvicible == false)
 		{
+			AudioManager.instance.PlayClipAt(hitSound, transform.position);
 			currentHealth -= damage;
 			healthBar.SetHealth(currentHealth);
 

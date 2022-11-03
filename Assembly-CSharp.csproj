@@ -70,13 +70,15 @@
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\PickUpObject.cs" />
     <Compile Include="Assets\Scripts\CheckPoint.cs" />
     <Compile Include="Assets\Scripts\WeakSpot.cs" />
     <Compile Include="Assets\Scripts\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\PickUpHeart.cs" />
     <Compile Include="Assets\Scripts\Ennemi_Patrol.cs" />
-    <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Credits.cs" />
+    <Compile Include="Assets\Scripts\Chest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
